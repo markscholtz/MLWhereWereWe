@@ -1,0 +1,9 @@
+# MAC OS
+.DS_Store
+*.swp
+
+# ignore everything under build
+build/*
+
+# ignore machine specific file
+xcuserdata
