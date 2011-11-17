@@ -10,4 +10,14 @@
 
 @implementation MLTVDB
 
+@synthesize delegate;
+
+- (id)initWithDelegate:(id<MLTVDBDelegate>)theDelegate
+{
+    if (self = [super init]) {
+        self.delegate = theDelegate;
+    }
+    return self;
+}
+
 @end

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4D78F54C1474FD7F0027F57E /* Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D78F54B1474FD7F0027F57E /* Specs-Info.plist */; };
+		4D78F5581475053A0027F57E /* MLTVDBDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D78F5571475053A0027F57E /* MLTVDBDelegateSpec.m */; };
+		4D78F55A147506A60027F57E /* MLTVDBDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 4D78F5591475063D0027F57E /* MLTVDBDelegate.h */; };
+		4D78F65B1475386F0027F57E /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D78F65A1475386F0027F57E /* libKiwi.a */; };
 		4D7C78DB1473ABF5001F38B6 /* MLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78DA1473ABF5001F38B6 /* MLDataSource.m */; };
 		4D7C78E11473B48F001F38B6 /* MLDataSourceDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78E01473B48F001F38B6 /* MLDataSourceDelegateSpec.m */; };
 		4D7C78E51473B8C8001F38B6 /* MLDataSourceDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78E41473B7BC001F38B6 /* MLDataSourceDelegate.h */; };
@@ -32,7 +35,6 @@
 		4DD20A521472633300ABC7A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD20A281472633300ABC7A3 /* Foundation.framework */; };
 		4DD20A5A1472633300ABC7A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DD20A581472633300ABC7A3 /* InfoPlist.strings */; };
 		4DD20A7C14726A2200ABC7A3 /* MLDataSourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD20A7B14726A2200ABC7A3 /* MLDataSourceSpec.m */; };
-		4DD20A7E14726E5500ABC7A3 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD20A7D14726E5500ABC7A3 /* libKiwi.a */; };
 		4DD20A81147296A600ABC7A3 /* MLSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD20A80147296A600ABC7A3 /* MLSearchViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,9 @@
 
 /* Begin PBXFileReference section */
 		4D78F54B1474FD7F0027F57E /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		4D78F5571475053A0027F57E /* MLTVDBDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTVDBDelegateSpec.m; sourceTree = "<group>"; };
+		4D78F5591475063D0027F57E /* MLTVDBDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTVDBDelegate.h; sourceTree = "<group>"; };
+		4D78F65A1475386F0027F57E /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKiwi.a; path = "../Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
 		4D7C78D91473ABF5001F38B6 /* MLDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLDataSource.h; sourceTree = "<group>"; };
 		4D7C78DA1473ABF5001F38B6 /* MLDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLDataSource.m; sourceTree = "<group>"; };
 		4D7C78E01473B48F001F38B6 /* MLDataSourceDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLDataSourceDelegateSpec.m; sourceTree = "<group>"; };
@@ -72,17 +77,16 @@
 		4DD20A281472633300ABC7A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DD20A2A1472633300ABC7A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4DD20A321472633300ABC7A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4DD20A351472633300ABC7A3 /* MLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MLAppDelegate.h; path = ../MLAppDelegate.h; sourceTree = "<group>"; };
-		4DD20A361472633300ABC7A3 /* MLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MLAppDelegate.m; path = ../MLAppDelegate.m; sourceTree = "<group>"; };
+		4DD20A351472633300ABC7A3 /* MLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAppDelegate.h; sourceTree = "<group>"; };
+		4DD20A361472633300ABC7A3 /* MLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDelegate.m; sourceTree = "<group>"; };
 		4DD20A3B1472633300ABC7A3 /* MLFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLFirstViewController.h; sourceTree = "<group>"; };
 		4DD20A3C1472633300ABC7A3 /* MLFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLFirstViewController.m; sourceTree = "<group>"; };
 		4DD20A421472633300ABC7A3 /* MLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSecondViewController.h; sourceTree = "<group>"; };
 		4DD20A431472633300ABC7A3 /* MLSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSecondViewController.m; sourceTree = "<group>"; };
-		4DD20A4E1472633300ABC7A3 /* wherewereweTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wherewereweTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD20A4E1472633300ABC7A3 /* specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD20A4F1472633300ABC7A3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		4DD20A591472633300ABC7A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DD20A7B14726A2200ABC7A3 /* MLDataSourceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLDataSourceSpec.m; sourceTree = "<group>"; };
-		4DD20A7D14726E5500ABC7A3 /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKiwi.a; path = "../../../../dev/cocoa/kiwi/Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
 		4DD20A7F147296A600ABC7A3 /* MLSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSearchViewController.h; sourceTree = "<group>"; };
 		4DD20A80147296A600ABC7A3 /* MLSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DD20A7E14726E5500ABC7A3 /* libKiwi.a in Frameworks */,
+				4D78F65B1475386F0027F57E /* libKiwi.a in Frameworks */,
 				4DD20A501472633300ABC7A3 /* SenTestingKit.framework in Frameworks */,
 				4DD20A511472633300ABC7A3 /* UIKit.framework in Frameworks */,
 				4DD20A521472633300ABC7A3 /* Foundation.framework in Frameworks */,
@@ -113,6 +117,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D78F555147504EA0027F57E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C78E01473B48F001F38B6 /* MLDataSourceDelegateSpec.m */,
+				4D78F5571475053A0027F57E /* MLTVDBDelegateSpec.m */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		4D78F556147504FC0027F57E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C78DE1473B3F0001F38B6 /* Models */,
+				4D7C78DD1473B3ED001F38B6 /* Views */,
+				4D7C78DC1473B3EA001F38B6 /* Controllers */,
+				4D78F555147504EA0027F57E /* Protocols */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		4D7C78DC1473B3EA001F38B6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				4DD20A7B14726A2200ABC7A3 /* MLDataSourceSpec.m */,
-				4D7C78E01473B48F001F38B6 /* MLDataSourceDelegateSpec.m */,
 				4D7C78E81473EBDB001F38B6 /* MLTVDBSpec.m */,
 			);
 			name = Models;
@@ -141,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				4D7C78E41473B7BC001F38B6 /* MLDataSourceDelegate.h */,
+				4D78F5591475063D0027F57E /* MLTVDBDelegate.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -188,8 +212,6 @@
 				4DD20A66147263D300ABC7A3 /* Models */,
 				4DD20A67147263E400ABC7A3 /* Views */,
 				4DD20A68147263EC00ABC7A3 /* Controllers */,
-				4DD20A351472633300ABC7A3 /* MLAppDelegate.h */,
-				4DD20A361472633300ABC7A3 /* MLAppDelegate.m */,
 				4D7C78E21473B619001F38B6 /* Protocols */,
 			);
 			path = Classes;
@@ -209,7 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				4DD20A221472633300ABC7A3 /* wherewerewe.app */,
-				4DD20A4E1472633300ABC7A3 /* wherewereweTests.octest */,
+				4DD20A4E1472633300ABC7A3 /* specs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,8 +239,8 @@
 		4DD20A251472633300ABC7A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D78F65A1475386F0027F57E /* libKiwi.a */,
 				4D7C78F91473F012001F38B6 /* libz.dylib */,
-				4DD20A7D14726E5500ABC7A3 /* libKiwi.a */,
 				4DD20A261472633300ABC7A3 /* UIKit.framework */,
 				4DD20A281472633300ABC7A3 /* Foundation.framework */,
 				4DD20A2A1472633300ABC7A3 /* CoreGraphics.framework */,
@@ -233,6 +255,8 @@
 				4D7C79091474023F001F38B6 /* wherewerewe-Info.plist */,
 				4D7C790A1474023F001F38B6 /* wherewerewe-Prefix.pch */,
 				4D7C7908147400A1001F38B6 /* Classes */,
+				4DD20A351472633300ABC7A3 /* MLAppDelegate.h */,
+				4DD20A361472633300ABC7A3 /* MLAppDelegate.m */,
 				4DD20A6B1472642D00ABC7A3 /* Resources */,
 				4DD20A2D1472633300ABC7A3 /* Supporting Files */,
 				4D7C78F81473EFF3001F38B6 /* External */,
@@ -251,10 +275,8 @@
 		4DD20A551472633300ABC7A3 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				4D78F556147504FC0027F57E /* Classes */,
 				4D78F54B1474FD7F0027F57E /* Specs-Info.plist */,
-				4D7C78DE1473B3F0001F38B6 /* Models */,
-				4D7C78DD1473B3ED001F38B6 /* Views */,
-				4D7C78DC1473B3EA001F38B6 /* Controllers */,
 				4DD20A561472633300ABC7A3 /* Supporting Files */,
 			);
 			path = Specs;
@@ -353,7 +375,7 @@
 			);
 			name = specs;
 			productName = wherewereweTests;
-			productReference = 4DD20A4E1472633300ABC7A3 /* wherewereweTests.octest */;
+			productReference = 4DD20A4E1472633300ABC7A3 /* specs.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -426,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D78F55A147506A60027F57E /* MLTVDBDelegate.h in Sources */,
 				4D7C78E51473B8C8001F38B6 /* MLDataSourceDelegate.h in Sources */,
 				4DD20A331472633300ABC7A3 /* main.m in Sources */,
 				4DD20A371472633300ABC7A3 /* MLAppDelegate.m in Sources */,
@@ -447,6 +470,7 @@
 				4DD20A7C14726A2200ABC7A3 /* MLDataSourceSpec.m in Sources */,
 				4D7C78E11473B48F001F38B6 /* MLDataSourceDelegateSpec.m in Sources */,
 				4D7C78E91473EBDB001F38B6 /* MLTVDBSpec.m in Sources */,
+				4D78F5581475053A0027F57E /* MLTVDBDelegateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,11 +584,15 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wherewerewe/wherewerewe-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/External/**",
+					"${SRCROOT}/../External/**",
+				);
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = /Users/mark/dev/cocoa/kiwi/Kiwi/Kiwi;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -579,11 +607,15 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wherewerewe/wherewerewe-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/External/**",
+					"${SRCROOT}/../External/**",
+				);
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = /Users/mark/dev/cocoa/kiwi/Kiwi/Kiwi;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;

@@ -8,7 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "RXMLElement.h"
+#import "MLTVDBDelegate.h"
 
 @interface MLTVDB : NSObject
+
+@property (nonatomic, retain) id<MLTVDBDelegate> delegate;
+
+- (id)initWithDelegate:(id<MLTVDBDelegate>)theDelegate;
 
 @end
