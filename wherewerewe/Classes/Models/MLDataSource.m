@@ -21,6 +21,12 @@
     return self;
 }
 
+- (void)dealloc
+{
+    self.delegate = nil;
+    [super dealloc];
+}
+
 - (void)search:(NSString *)text
 {
     self.shows = [[NSArray alloc] initWithObjects:@"The Office", nil];

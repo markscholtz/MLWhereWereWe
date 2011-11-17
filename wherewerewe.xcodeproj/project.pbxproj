@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D6815CC14754D7300F60EAD /* LRResty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6815CB14754D7300F60EAD /* LRResty.framework */; };
 		4D78F54C1474FD7F0027F57E /* Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D78F54B1474FD7F0027F57E /* Specs-Info.plist */; };
 		4D78F5581475053A0027F57E /* MLTVDBDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D78F5571475053A0027F57E /* MLTVDBDelegateSpec.m */; };
 		4D78F55A147506A60027F57E /* MLTVDBDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 4D78F5591475063D0027F57E /* MLTVDBDelegate.h */; };
@@ -16,9 +17,9 @@
 		4D7C78E51473B8C8001F38B6 /* MLDataSourceDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78E41473B7BC001F38B6 /* MLDataSourceDelegate.h */; };
 		4D7C78E91473EBDB001F38B6 /* MLTVDBSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78E81473EBDB001F38B6 /* MLTVDBSpec.m */; };
 		4D7C78EC1473ECFC001F38B6 /* MLTVDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78EB1473ECFC001F38B6 /* MLTVDB.m */; };
-		4D7C78F51473EFDC001F38B6 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78F01473EFDC001F38B6 /* NSDataAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4D7C78F61473EFDC001F38B6 /* RXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78F21473EFDC001F38B6 /* RXMLElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4D7C78F71473EFDC001F38B6 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78F41473EFDC001F38B6 /* TBXML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4D7C78F51473EFDC001F38B6 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78F01473EFDC001F38B6 /* NSDataAdditions.m */; };
+		4D7C78F61473EFDC001F38B6 /* RXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78F21473EFDC001F38B6 /* RXMLElement.m */; };
+		4D7C78F71473EFDC001F38B6 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C78F41473EFDC001F38B6 /* TBXML.m */; };
 		4D7C78FA1473F012001F38B6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7C78F91473F012001F38B6 /* libz.dylib */; };
 		4D7C79001473FE4E001F38B6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C78FF1473FE4E001F38B6 /* MainStoryboard.storyboard */; };
 		4D7C79061473FEFD001F38B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C79021473FEFD001F38B6 /* InfoPlist.strings */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D6815CB14754D7300F60EAD /* LRResty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LRResty.framework; path = ../External/LRResty/LRResty.framework; sourceTree = "<group>"; };
 		4D78F54B1474FD7F0027F57E /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		4D78F5571475053A0027F57E /* MLTVDBDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTVDBDelegateSpec.m; sourceTree = "<group>"; };
 		4D78F5591475063D0027F57E /* MLTVDBDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTVDBDelegate.h; sourceTree = "<group>"; };
@@ -77,8 +79,8 @@
 		4DD20A281472633300ABC7A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DD20A2A1472633300ABC7A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4DD20A321472633300ABC7A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4DD20A351472633300ABC7A3 /* MLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAppDelegate.h; sourceTree = "<group>"; };
-		4DD20A361472633300ABC7A3 /* MLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDelegate.m; sourceTree = "<group>"; };
+		4DD20A351472633300ABC7A3 /* MLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MLAppDelegate.h; path = ../MLAppDelegate.h; sourceTree = "<group>"; };
+		4DD20A361472633300ABC7A3 /* MLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MLAppDelegate.m; path = ../MLAppDelegate.m; sourceTree = "<group>"; };
 		4DD20A3B1472633300ABC7A3 /* MLFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLFirstViewController.h; sourceTree = "<group>"; };
 		4DD20A3C1472633300ABC7A3 /* MLFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLFirstViewController.m; sourceTree = "<group>"; };
 		4DD20A421472633300ABC7A3 /* MLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSecondViewController.h; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D6815CC14754D7300F60EAD /* LRResty.framework in Frameworks */,
 				4D7C78FA1473F012001F38B6 /* libz.dylib in Frameworks */,
 				4DD20A271472633300ABC7A3 /* UIKit.framework in Frameworks */,
 				4DD20A291472633300ABC7A3 /* Foundation.framework in Frameworks */,
@@ -213,6 +216,8 @@
 				4DD20A67147263E400ABC7A3 /* Views */,
 				4DD20A68147263EC00ABC7A3 /* Controllers */,
 				4D7C78E21473B619001F38B6 /* Protocols */,
+				4DD20A351472633300ABC7A3 /* MLAppDelegate.h */,
+				4DD20A361472633300ABC7A3 /* MLAppDelegate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 		4DD20A171472633300ABC7A3 = {
 			isa = PBXGroup;
 			children = (
+				4D6815CB14754D7300F60EAD /* LRResty.framework */,
 				4DD20A2C1472633300ABC7A3 /* wherewerewe */,
 				4DD20A551472633300ABC7A3 /* Specs */,
 				4DD20A251472633300ABC7A3 /* Frameworks */,
@@ -255,8 +261,6 @@
 				4D7C79091474023F001F38B6 /* wherewerewe-Info.plist */,
 				4D7C790A1474023F001F38B6 /* wherewerewe-Prefix.pch */,
 				4D7C7908147400A1001F38B6 /* Classes */,
-				4DD20A351472633300ABC7A3 /* MLAppDelegate.h */,
-				4DD20A361472633300ABC7A3 /* MLAppDelegate.m */,
 				4DD20A6B1472642D00ABC7A3 /* Resources */,
 				4DD20A2D1472633300ABC7A3 /* Supporting Files */,
 				4D7C78F81473EFF3001F38B6 /* External */,
@@ -510,7 +514,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -527,6 +531,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "${SRCROOT}/External/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -536,7 +544,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -547,6 +555,10 @@
 				HEADER_SEARCH_PATHS = "${SRCROOT}/External/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -555,6 +567,11 @@
 		4DD20A611472633300ABC7A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../External/LRResty\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wherewerewe/wherewerewe-Prefix.pch";
 				INFOPLIST_FILE = "wherewerewe/wherewerewe-Info.plist";
@@ -566,6 +583,11 @@
 		4DD20A621472633300ABC7A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../External/LRResty\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wherewerewe/wherewerewe-Prefix.pch";
 				INFOPLIST_FILE = "wherewerewe/wherewerewe-Info.plist";
@@ -578,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wherewerewe.app/wherewerewe";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -601,6 +624,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wherewerewe.app/wherewerewe";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
