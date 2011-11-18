@@ -8,6 +8,12 @@
 
 #import "MLTVDB.h"
 
+@interface MLTVDB()
+
+- (NSMutableArray *)parseResponse:(LRRestyResponse *)response;
+    
+@end
+
 @implementation MLTVDB
 
 @synthesize delegate;
@@ -24,6 +30,26 @@
 {
     self.delegate = nil;
     [super dealloc];
+}
+
+- (void)search:(NSString *)search
+{
+    [[LRResty client] get:@"http://www.example.com" withBlock:^(LRRestyResponse *response) {
+        [self parseResponse:response];
+    }];
+}
+
+- (NSMutableArray *)parseResponse:(LRRestyResponse *)response
+{
+    RXMLElement *rxml = [RXMLElement elementFromXMLString:[response asString]];
+    
+    NSMutableArray *results = [[NSMutableArray alloc] init];
+    
+    [rxml iterate:@"Series" with: ^(RXMLElement *series) {
+        [results addObject:[[series child:@"SeriesName"] text]];
+    }];
+    
+    return [results autorelease];
 }
 
 @end

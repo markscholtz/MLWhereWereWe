@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D6815CC14754D7300F60EAD /* LRResty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6815CB14754D7300F60EAD /* LRResty.framework */; };
+		4D6815D6147656B100F60EAD /* LRResty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6815CB14754D7300F60EAD /* LRResty.framework */; };
 		4D78F54C1474FD7F0027F57E /* Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D78F54B1474FD7F0027F57E /* Specs-Info.plist */; };
 		4D78F5581475053A0027F57E /* MLTVDBDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D78F5571475053A0027F57E /* MLTVDBDelegateSpec.m */; };
 		4D78F55A147506A60027F57E /* MLTVDBDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 4D78F5591475063D0027F57E /* MLTVDBDelegate.h */; };
@@ -50,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D6815CB14754D7300F60EAD /* LRResty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LRResty.framework; path = ../External/LRResty/LRResty.framework; sourceTree = "<group>"; };
+		4D6815CB14754D7300F60EAD /* LRResty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LRResty.framework; path = External/LRResty/LRResty.framework; sourceTree = "<group>"; };
 		4D78F54B1474FD7F0027F57E /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		4D78F5571475053A0027F57E /* MLTVDBDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTVDBDelegateSpec.m; sourceTree = "<group>"; };
 		4D78F5591475063D0027F57E /* MLTVDBDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTVDBDelegate.h; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D6815CC14754D7300F60EAD /* LRResty.framework in Frameworks */,
+				4D6815D6147656B100F60EAD /* LRResty.framework in Frameworks */,
 				4D7C78FA1473F012001F38B6 /* libz.dylib in Frameworks */,
 				4DD20A271472633300ABC7A3 /* UIKit.framework in Frameworks */,
 				4DD20A291472633300ABC7A3 /* Foundation.framework in Frameworks */,
@@ -225,7 +225,6 @@
 		4DD20A171472633300ABC7A3 = {
 			isa = PBXGroup;
 			children = (
-				4D6815CB14754D7300F60EAD /* LRResty.framework */,
 				4DD20A2C1472633300ABC7A3 /* wherewerewe */,
 				4DD20A551472633300ABC7A3 /* Specs */,
 				4DD20A251472633300ABC7A3 /* Frameworks */,
@@ -247,6 +246,7 @@
 			children = (
 				4D78F65A1475386F0027F57E /* libKiwi.a */,
 				4D7C78F91473F012001F38B6 /* libz.dylib */,
+				4D6815CB14754D7300F60EAD /* LRResty.framework */,
 				4DD20A261472633300ABC7A3 /* UIKit.framework */,
 				4DD20A281472633300ABC7A3 /* Foundation.framework */,
 				4DD20A2A1472633300ABC7A3 /* CoreGraphics.framework */,
@@ -570,7 +570,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../External/LRResty\"",
+					"\"$(SRCROOT)/External/LRResty\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wherewerewe/wherewerewe-Prefix.pch";
@@ -586,7 +586,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../External/LRResty\"",
+					"\"$(SRCROOT)/External/LRResty\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wherewerewe/wherewerewe-Prefix.pch";
@@ -604,13 +604,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/External/LRResty\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wherewerewe/wherewerewe-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/External/**",
-					"${SRCROOT}/../External/**",
-				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/External/Kiwi/**";
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -628,13 +626,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/External/LRResty\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wherewerewe/wherewerewe-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/External/**",
-					"${SRCROOT}/../External/**",
-				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/External/Kiwi/**";
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
