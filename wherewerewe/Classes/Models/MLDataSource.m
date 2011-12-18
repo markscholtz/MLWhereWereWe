@@ -29,8 +29,9 @@
 
 - (void)search:(NSString *)text
 {
-    self.shows = [[NSArray alloc] initWithObjects:@"The Office", nil];
+    self.shows = [[[NSArray alloc] initWithObjects:@"The Office", nil] autorelease];
     [self.delegate searchDidEnd];
+
 }
 
 @end

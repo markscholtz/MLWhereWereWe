@@ -7,16 +7,20 @@
 //
 
 #import "MLTVDB.h"
+#import "constants.h"
 
 @interface MLTVDB()
 
-- (NSMutableArray *)parseResponse:(LRRestyResponse *)response;
+- (NSString *)searchUrlForTerm:(NSString *)term;
+- (void)handleResponse:(LRRestyResponse *)response;
+- (NSArray *)parseResponse:(LRRestyResponse *)response;
     
 @end
 
 @implementation MLTVDB
 
 @synthesize delegate;
+@synthesize searchResults;
 
 - (id)initWithDelegate:(id<MLTVDBDelegate>)theDelegate
 {
@@ -29,17 +33,29 @@
 - (void)dealloc
 {
     self.delegate = nil;
+    self.searchResults = nil;
     [super dealloc];
 }
 
-- (void)search:(NSString *)search
+- (void)search:(NSString *)term
 {
-    [[LRResty client] get:@"http://www.example.com" withBlock:^(LRRestyResponse *response) {
-        [self parseResponse:response];
+    [[LRResty client] get:[self searchUrlForTerm: term] withBlock:^(LRRestyResponse *response) {
+        [self handleResponse:response];
     }];
 }
 
-- (NSMutableArray *)parseResponse:(LRRestyResponse *)response
+- (NSString *)searchUrlForTerm:(NSString *)term
+{
+    return [NSString stringWithFormat:@"%@%@", TVDB_SERIES_SEARCH_URL, term];
+}
+
+- (void)handleResponse:(LRRestyResponse *)response
+{
+    self.searchResults = [self parseResponse:response];
+    [self.delegate searchDidEnd];
+}
+
+- (NSArray *)parseResponse:(LRRestyResponse *)response
 {
     RXMLElement *rxml = [RXMLElement elementFromXMLString:[response asString]];
     
@@ -48,7 +64,7 @@
     [rxml iterate:@"Series" with: ^(RXMLElement *series) {
         [results addObject:[[series child:@"SeriesName"] text]];
     }];
-    
+
     return [results autorelease];
 }
 

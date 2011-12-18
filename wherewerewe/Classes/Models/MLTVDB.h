@@ -14,6 +14,7 @@
 @interface MLTVDB : NSObject
 
 @property (nonatomic, retain) id<MLTVDBDelegate> delegate;
+@property (nonatomic, retain) NSArray *searchResults;
 
 - (id)initWithDelegate:(id<MLTVDBDelegate>)theDelegate;
 - (void)search:(NSString *)search;

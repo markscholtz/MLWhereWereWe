@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D06FB90147A459700E4004E /* constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D06FB8F147A459700E4004E /* constants.m */; };
 		4D6815D6147656B100F60EAD /* LRResty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6815CB14754D7300F60EAD /* LRResty.framework */; };
 		4D78F54C1474FD7F0027F57E /* Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D78F54B1474FD7F0027F57E /* Specs-Info.plist */; };
 		4D78F5581475053A0027F57E /* MLTVDBDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D78F5571475053A0027F57E /* MLTVDBDelegateSpec.m */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D06FB8E147A459700E4004E /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		4D06FB8F147A459700E4004E /* constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constants.m; sourceTree = "<group>"; };
 		4D6815CB14754D7300F60EAD /* LRResty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LRResty.framework; path = External/LRResty/LRResty.framework; sourceTree = "<group>"; };
 		4D78F54B1474FD7F0027F57E /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		4D78F5571475053A0027F57E /* MLTVDBDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTVDBDelegateSpec.m; sourceTree = "<group>"; };
@@ -272,6 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				4DD20A321472633300ABC7A3 /* main.m */,
+				4D06FB8E147A459700E4004E /* constants.h */,
+				4D06FB8F147A459700E4004E /* constants.m */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 				4D7C78F51473EFDC001F38B6 /* NSDataAdditions.m in Sources */,
 				4D7C78F61473EFDC001F38B6 /* RXMLElement.m in Sources */,
 				4D7C78F71473EFDC001F38B6 /* TBXML.m in Sources */,
+				4D06FB90147A459700E4004E /* constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
